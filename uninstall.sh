@@ -5,4 +5,4 @@ dir_to_remove=$PWD
 cd ..
 rmdir $dir_to_remove
 cd /usr/local/bin
-rm gouda-clone gouda-list
+rm gouda-clone gouda-list gouda-untar

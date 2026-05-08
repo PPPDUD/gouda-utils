@@ -1,5 +1,5 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-cp gouda-clone gouda-list /usr/local/bin/
-chmod +x /usr/local/bin/gouda-clone /usr/local/bin/gouda-list
+chmod +x gouda-*
+ln -s $(realpath gouda-clone) $(realpath gouda-list) $(realpath gouda-untar) /usr/local/bin
 echo gouda-utils installed to /usr/local/bin!
