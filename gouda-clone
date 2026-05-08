@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+if [[ $# -eq 0 ]] ; then
+    echo 'Usage: gouda-clone <URL>' >&2;
+    exit 64
+fi
+gouda-chkroot
+cd /opt/gouda-packages/
+git clone $1 && gouda-install "$(basename "$1" .git)"
