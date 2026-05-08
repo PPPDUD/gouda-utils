@@ -26,7 +26,7 @@ Usage: `gouda-list`
 Example: `gouda-list`
 
 ## gouda-untar
-Install a Gouda package from a tarball and places it under `/opt/gouda-packages/`.
+Install a Gouda package from a tarball and place it under `/opt/gouda-packages/`.
 
 Usage: `gouda-untar <FILE>`
 
