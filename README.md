@@ -28,6 +28,6 @@ Example: `gouda-list`
 ## gouda-untar
 Install a Gouda package from a tarball and place it under `/opt/gouda-packages/`.
 
-Usage: `gouda-untar <FILE>`
+Usage: `gouda-untar <FILE> <NAME>`
 
-Example: `gouda-untar mypkg.tar.xz`
+Example: `gouda-untar mypkg.tar.xz mypkg`
