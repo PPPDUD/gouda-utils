@@ -9,3 +9,4 @@ cd /opt/gouda-packages/
 mkdir -p "$2"
 tar -xf "$source_path" -C "$2"
 cd "$2"
+./install.sh
