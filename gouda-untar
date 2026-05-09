@@ -1,9 +1,10 @@
 #!/usr/bin/bash
-if [[ $# -eq 0 ]] ; then
-    echo 'Usage: gouda-untar <FILE>' >&2;
+if [[ $# -lt 2 ]] ; then
+    echo 'Usage: gouda-untar <FILE> <NAME>' >&2;
     exit 64
 fi
 gouda-chkroot
 source_path=$(realpath $1)
 cd /opt/gouda-packages/
-tar -xf $source_path
+tar -xf "$source_path" -C "$2"
+cd "$2"
